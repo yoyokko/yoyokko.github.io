@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoyokko.com/"/>
-  <updated>2015-11-28T09:28:46.000Z</updated>
+  <updated>2015-12-09T06:57:38.000Z</updated>
   <id>http://yoyokko.com/</id>
   
   <author>
@@ -15,24 +15,94 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://yoyokko.com/2015/11/28/hello-world/"/>
-    <id>http://yoyokko.com/2015/11/28/hello-world/</id>
-    <published>2015-11-28T09:28:46.000Z</published>
-    <updated>2015-11-28T09:28:46.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <title><![CDATA[常用命令集合]]></title>
+    <link href="http://yoyokko.com/2015/12/09/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/"/>
+    <id>http://yoyokko.com/2015/12/09/常用命令集合/</id>
+    <published>2015-12-09T06:52:55.000Z</published>
+    <updated>2015-12-09T06:57:38.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li><p>Dump Dysm Info</p>
+<pre><code>atos -arch armv7 -o ./XXXX<span class="class">.app</span><span class="class">.dSYM</span>/Contents/Resources/DWARF/XXXX
+</code></pre></li>
+<li><p>Search &amp; Replace with acl</p>
+<pre><code>ack <span class="operator">-l</span> <span class="string">'pattern'</span> | xargs perl -pi -E <span class="string">'s/pattern/replacement/g'</span>
+</code></pre></li>
+<li><p>Date to timestamp</p>
+<pre><code>date -j -f <span class="string">"<span class="variable">%Y</span>-<span class="variable">%m</span>-<span class="variable">%d</span> <span class="variable">%H</span>:<span class="variable">%M</span>:<span class="variable">%S</span>"</span> <span class="string">"2015-03-20 00:00:00"</span> <span class="string">"+<span class="variable">%s</span>"</span>
+</code></pre></li>
+<li><p>Timestamp to date</p>
+<pre><code><span class="type">date</span> -r <span class="number">1426780800</span>
+</code></pre></li>
+<li><p>IDEA 激活服务器</p>
+<pre><code><span class="string">http:</span><span class="comment">//idea.lanyus.com</span>
+</code></pre></li>
+</ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
+    <![CDATA[<ul>
+<li><p>Dump Dysm Info</p>
+<pre><code>atos -arch armv7 -o ./XXXX<span class="class">.app</span><span class="class">.dSYM</span>/Contents]]>
     </summary>
+    
+      <category term="shell, acl, iOS, terminal" scheme="http://yoyokko.com/tags/shell-acl-iOS-terminal/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[喜马拉雅MP3数据库解析]]></title>
+    <link href="http://yoyokko.com/2015/12/09/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85MP3%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A7%A3%E6%9E%90/"/>
+    <id>http://yoyokko.com/2015/12/09/喜马拉雅MP3数据库解析/</id>
+    <published>2015-12-09T06:49:07.000Z</published>
+    <updated>2015-12-09T06:52:36.000Z</updated>
+    <content type="html"><![CDATA[<p>喜马拉雅iOS客户端，通过iExplorer取出它的数据库文件和所有的mp3文件，运行脚本将无意义文件名改为歌曲名。</p>
+<pre><code><span class="keyword">import</span> sqlite3 <span class="keyword">as</span> lite
+<span class="keyword">import</span> sys
+<span class="keyword">import</span> os
+
+con = <span class="keyword">None</span>
+
+<span class="keyword">try</span>:
+    con = lite.connect(<span class="string">'ting.sqlite'</span>)
+
+    cur = con.cursor()
+    cur.execute(<span class="string">'SELECT title, filePath FROM "download_table"'</span>)
+
+    rows = cur.fetchall()
+
+    <span class="keyword">for</span> row <span class="keyword">in</span> rows:
+        fpath = <span class="string">"./Download/"</span> + row[<span class="number">1</span>]
+        dpath = <span class="string">"./Download/"</span> + row[<span class="number">0</span>] + <span class="string">".mp3"</span>
+        os.rename(fpath, dpath)
+
+<span class="keyword">except</span> lite.Error, e:
+    <span class="keyword">print</span> <span class="string">"Error %s:"</span> % e.args[<span class="number">0</span>]
+    sys.exit(<span class="number">1</span>)
+
+<span class="keyword">finally</span>:
+    <span class="keyword">if</span> con:
+        con.close()
+</code></pre>]]></content>
+    <summary type="html">
+    <![CDATA[<p>喜马拉雅iOS客户端，通过iExplorer取出它的数据库文件和所有的mp3文件，运行脚本将无意义文件名改为歌曲名。</p>
+<pre><code><span class="keyword">import</span> sqlite3 <span class="keywor]]>
+    </summary>
+    
+      <category term="mp3 sqlite3 喜马拉雅" scheme="http://yoyokko.com/tags/mp3-sqlite3-%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Got table hook on Android 6.0]]></title>
+    <link href="http://yoyokko.com/2015/12/01/got-hook-on-android-m-md/"/>
+    <id>http://yoyokko.com/2015/12/01/got-hook-on-android-m-md/</id>
+    <published>2015-12-01T06:59:49.000Z</published>
+    <updated>2015-12-01T07:02:14.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="got hook android 6.0 m" scheme="http://yoyokko.com/tags/got-hook-android-6-0-m/"/>
     
   </entry>
   
